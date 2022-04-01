@@ -1,0 +1,169 @@
+/*Expand*/
+
+@keyframes expand {
+  0% {transform:scale(1.1);}
+  100% {transform: none;}
+}
+
+@-webkit-keyframes expand {
+	from {transform: scale(1.1); }
+	to {transform: none}
+}
+
+.expand {
+	animation-name: expand;
+	animation-duration: 0.5s;
+	-webkit-animation-name: expand;
+	-webkit-animation-duration: 0.5s;
+}
+
+/*Jump*/
+
+@keyframes jump {
+	0% {transform: none;}
+	50% {transform: translateY(-10px);}
+	100%{transform: none;}
+}
+
+@-webkit-keyframes jump {
+	0% {transform: none;}
+	50% {transform: translateY(-10px);}
+	100%{transform: none;}
+}
+
+.jump {
+	animation-name: jump;
+	animation-duration: 1s;
+	-webkit-animation-name: jump;
+	-webkit-animation-duration: 1s;
+}
+
+/*Fade*/
+
+@-webkit-keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+/*bgFill*/
+
+.bgfill {
+  -webkit-animation-name: bgfill;
+  -webkit-animation-duration: 1s;
+  animation-name: bgfill;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes bgfill {
+  from {background-color: transparent; color:white;} 
+  to {background-color: #e6e6e6; color: #666}
+}
+
+@keyframes bgfill {
+  from {background-color: transparent; color:white;} 
+  to {background-color: #e6e6e6; color: #666;}
+}
+
+/*Doublefill*/
+
+.doubleUnderline {
+  -webkit-animation-name: doubleUnderline;
+  -webkit-animation-duration: 1s;
+  animation-name: doubleUnderline;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes doubleUnderline {
+  from {text-decoration: none;} 
+  to {text-decoration: underline white wavy;}
+}
+
+@keyframes doubleUnderline {
+  from {text-decoration: none;} 
+  to {text-decoration: underline white wavy;}
+}
+
+/*Left Slide In*/
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slideInFromLeft {
+	animation: slideInFromLeft 2s ease;
+	-webkit-animation: slideInFromLeft 2s ease 0s 1 normal none;
+}
+
+/*Enlarge*/
+
+@keyframes enlarge {
+  0% {
+    transform: scale(0.1);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframe enlarge {
+  0% {
+    transform: scale(0.1);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.enlarge {
+  animation: enlarge 1s ease;
+  -webkit-animation: enlarge 1s ease;
+}
+
+/*Flip in*/
+
+@keyframes turn {
+  0% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes turn {
+  0% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}

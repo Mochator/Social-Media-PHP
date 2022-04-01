@@ -1,0 +1,167 @@
+/*General Use Styling*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	background-color: black;
+	width: 100%;
+}
+
+
+/*Background*/
+#top {
+	position: relative;
+	height:100%;
+}
+
+/*Navigation*/
+
+nav {
+	padding: 20px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#logo:hover {
+	animation: jump 1s;
+	-webkit-animation: jump 1s;
+}
+
+#menu, #logo {
+	display: inline-block;
+}
+
+#logo img{
+	position: relative;
+	height: 100px;
+}
+
+#menu {
+	position: absolute;
+	float: right;
+	top: 50;
+	right: 30;
+	z-index: 3;
+}
+
+.menu-item{
+	padding-left: 20px;
+	padding-right: 20px;
+	display: inline-block;
+	position: relative;
+}
+
+.menu-item a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	font-size: 24px;
+	text-align: center;
+}
+
+.menu-item:hover a{
+	text-shadow: 0 0 5px #fff;
+}
+
+
+/*DropDown*/
+.dropdown {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 0;
+}
+
+.dropdown a{
+	display: block;
+	padding: 5px 10px;
+	font-size: 20px;
+}
+
+.dropdown a:hover {
+	color: #000;
+	background: #fff;
+	opacity: .3;
+	text-shadow: 0 0 5px #000;
+	font-weight: bold;
+}
+
+.menu-item:hover .dropdown{
+	display: block;
+	z-index: 1;  
+}
+
+.container {
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Footer*/
+footer{
+	position: relative;
+	color: white;
+}
+
+.footer-block {
+	position: relative;
+	text-align: center;
+	padding: 20px;
+}
+
+.footer-block-item{
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+footer #footerLogo {
+	width:50px;
+	height: 50px;
+}
+
+.footer-item {
+	display: inline-block;
+	margin: 0 30px;
+	vertical-align: top;
+}
+
+.footer-item a{
+	text-decoration: none;
+	color: #e6e6e6;
+}
+
+.footer-item a:visited {
+	color: #666;
+}
+
+.footer-title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.footer-item img {
+	height: 30px;
+	width: 30px;
+	margin: 0px 5px;
+}
+
+
+/*Form*/
+.submitButton{
+	border: 1px black solid;
+	border-radius: 10px;
+	background-color: black;
+	color: white;
+}
+
+/*Error Message*/
+.errorMsg {
+	background-color: white;
+	border-left: 3px darkred solid;
+	width: 100%;
+}
